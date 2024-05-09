@@ -38,7 +38,7 @@ class SslVerificationMetadata:
         if self.mode in requires_cert_options and not self.ca_cert_path:
             # TODO check if file exist and have read permissions
             raise BadInitializationException(
-                f"SslVerificationMetaData was initialized incorrect with "
+                "SslVerificationMetaData was initialized incorrect with "
                 f"mode: {self.mode} and ca_cert_path: {self.ca_cert_path}")
 
     def __eq__(self, other):
